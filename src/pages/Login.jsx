@@ -21,7 +21,7 @@ function Login() {
             }).then(res => {
                 localStorage.setItem("tokenSession", res.data.accessToken)
                 showToast("Berhasil login", "success")
-                nav("/personal-data")
+                nav("/")
             })
         } catch (error) {
             console.log(error);

@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router";
 export const AuthContext = createContext(null)
 
 export const AuthProvider = ({ children }) => {
-    const isAuthenticated = !!localStorage.getItem("accessToken")
+    const isAuthenticated = !!localStorage.getItem("tokenSession")
 
     const path = useLocation()
     const nav = useNavigate()
